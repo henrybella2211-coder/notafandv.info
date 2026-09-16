@@ -1,26 +1,159 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --dw-bg: #111318;
+  --dw-bg-raised: #1a1d24;
+  --dw-bg-strip: #15171d;
+  --dw-fg: #e4e6eb;
+  --dw-fg-muted: #9aa0ae;
+  --dw-border: rgba(255, 255, 255, 0.1);
+  --dw-blue: #3b82f6;
+  --dw-blue-light: #60a5fa;
+  --dw-lime: #84cc16;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: var(--dw-bg);
+  --color-foreground: var(--dw-fg);
+  --color-dw-bg: var(--dw-bg);
+  --color-dw-bg-raised: var(--dw-bg-raised);
+  --color-dw-bg-strip: var(--dw-bg-strip);
+  --color-dw-fg: var(--dw-fg);
+  --color-dw-fg-muted: var(--dw-fg-muted);
+  --color-dw-border: var(--dw-border);
+  --color-dw-blue: var(--dw-blue);
+  --color-dw-blue-light: var(--dw-blue-light);
+  --color-dw-lime: var(--dw-lime);
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-sora);
+  --font-mono: var(--font-jetbrains-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  border-color: var(--dw-border);
+}
+
+html {
+  color-scheme: dark;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--dw-bg);
+  color: var(--dw-fg);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading), ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-mono-nums {
+  font-family: var(--font-mono), ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Visible focus states for keyboard navigation */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--dw-blue-light);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Prose styling for article bodies */
+.dw-prose h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--dw-fg);
+}
+
+.dw-prose h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: var(--dw-fg);
+}
+
+.dw-prose p {
+  margin-bottom: 1.1rem;
+  line-height: 1.75;
+  color: var(--dw-fg);
+}
+
+.dw-prose ul,
+.dw-prose ol {
+  margin-bottom: 1.1rem;
+  padding-left: 1.4rem;
+  line-height: 1.75;
+}
+
+.dw-prose li {
+  margin-bottom: 0.4rem;
+}
+
+.dw-prose ul {
+  list-style-type: disc;
+}
+
+.dw-prose ol {
+  list-style-type: decimal;
+}
+
+.dw-prose a {
+  color: var(--dw-blue-light);
+  text-underline-offset: 3px;
+}
+
+.dw-prose a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.dw-prose strong {
+  color: var(--dw-fg);
+  font-weight: 700;
+}
+
+.dw-prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.dw-prose th,
+.dw-prose td {
+  border: 1px solid var(--dw-border);
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.dw-prose th {
+  background: var(--dw-bg-raised);
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--dw-fg-muted);
+}
+
+.dw-prose td {
+  font-family: var(--font-mono), ui-monospace, monospace;
+}
+
+.dw-prose td:first-child {
+  font-family: var(--font-sans), ui-sans-serif, sans-serif;
+}
+
+::selection {
+  background: var(--dw-blue);
+  color: #ffffff;
 }
