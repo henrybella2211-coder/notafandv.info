@@ -111,7 +111,12 @@ export default function Page() {
         breathing directly into the lungs. This produces denser vapour
         and is generally paired with higher-VG e-liquid, though tank
         capacity itself is not restricted by the same 2ml pod rule that
-        applies to sealed pod cartridges.
+        applies to sealed pod cartridges. See our{" "}
+        <Link href="/guides/adjustable-airflow-explained">
+          guide to what adjustable airflow actually changes
+        </Link>{" "}
+        for how opening or restricting that ring affects draw resistance,
+        flavour and vapour temperature.
       </p>
 
       <h2>Who each category tends to suit</h2>

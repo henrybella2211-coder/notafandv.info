@@ -65,6 +65,38 @@ export const articles: ArticleMeta[] = [
       alt: "Four cylindrical rechargeable battery cells with black wrap standing upright on a plain surface",
     },
   },
+  {
+    slug: "adjustable-airflow-explained",
+    title: "Adjustable airflow explained: what it actually changes",
+    excerpt:
+      "How AFC rings and switches on pods and mods work, how opening or restricting them changes draw resistance, flavour and vapour temperature, and how to find your own setting.",
+    category: "Device Categories",
+    deviceType: "Pod kit / Sub-ohm mod",
+    readTime: "7 min read",
+    lastUpdated: "Last updated 17 September 2026",
+    lastUpdatedISO: "2026-09-17",
+    datePublishedISO: "2026-07-14",
+    image: {
+      src: "/images/vape-mod-tank-airflow-control.jpg",
+      alt: "Red and black vape mod with sub-ohm tank and adjustable airflow slots resting on dark volcanic rock",
+    },
+  },
+  {
+    slug: "puff-counters-and-coil-life-indicators",
+    title: "Puff counters and coil-life indicators: how accurate are they?",
+    excerpt:
+      "How chipset-tracked puff counts and resistance-drift wear indicators actually work, what throws the count off, and why taste and vapour remain the more reliable signal.",
+    category: "Buying Guide",
+    deviceType: "All device types",
+    readTime: "7 min read",
+    lastUpdated: "Last updated 18 September 2026",
+    lastUpdatedISO: "2026-09-18",
+    datePublishedISO: "2026-07-22",
+    image: {
+      src: "/images/vape-device-digital-display-screen.jpg",
+      alt: "Vape mod digital display screen glowing with wattage and resistance readout in a smoke-filled purple-lit room",
+    },
+  },
 ];
 
 export function getArticleBySlug(slug: string): ArticleMeta | undefined {

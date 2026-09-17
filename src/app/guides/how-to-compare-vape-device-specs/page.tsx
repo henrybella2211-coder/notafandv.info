@@ -94,7 +94,12 @@ export default function Page() {
         <li>
           <strong>Puff counter</strong> &ndash; a running tally of puffs
           taken, useful for tracking usage patterns but not a substitute
-          for checking e-liquid level.
+          for checking e-liquid level. Our{" "}
+          <Link href="/guides/puff-counters-and-coil-life-indicators">
+            guide to puff counters and coil-life indicators
+          </Link>{" "}
+          covers how accurate that tally and any related wear warning
+          actually are.
         </li>
         <li>
           <strong>Preheat/curve settings</strong> &ndash; briefly spikes
