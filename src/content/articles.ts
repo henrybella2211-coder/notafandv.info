@@ -97,6 +97,22 @@ export const articles: ArticleMeta[] = [
       alt: "Vape mod digital display screen glowing with wattage and resistance readout in a smoke-filled purple-lit room",
     },
   },
+  {
+    slug: "al-fakher-hypermax-prime-50k-battery-charging-specs",
+    title: "Al Fakher HyperMax Prime 50K: battery, charging and device specs reviewed",
+    excerpt:
+      "A spec-by-spec read of the 1000mAh battery, USB-C charging, Snap Dual pod module and LED display on the Al Fakher HyperMax Prime 50K, checked against manufacturer claims rather than in-house testing.",
+    category: "Battery & Charging",
+    deviceType: "Rechargeable pod kit",
+    readTime: "8 min read",
+    lastUpdated: "Last updated 19 September 2026",
+    lastUpdatedISO: "2026-09-19",
+    datePublishedISO: "2026-07-29",
+    image: {
+      src: "/images/rechargeable-pod-vape-kit-table.jpg",
+      alt: "A rechargeable pod vape kit with coloured accent lighting sitting on a table surface",
+    },
+  },
 ];
 
 export function getArticleBySlug(slug: string): ArticleMeta | undefined {

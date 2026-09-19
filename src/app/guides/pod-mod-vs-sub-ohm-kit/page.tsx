@@ -165,6 +165,19 @@ export default function Page() {
         Neither is inherently the &ldquo;better&rdquo; device; they are
         built for different priorities.
       </p>
+      <p>
+        Newer rechargeable pod kits with replaceable pod modules, such as
+        the{" "}
+        <Link href="/guides/al-fakher-hypermax-prime-50k-battery-charging-specs">
+          Al Fakher HyperMax Prime 50K
+        </Link>
+        , still sit on the pod kit side of this split: fixed internal
+        battery, sealed pod, no adjustable airflow. What differs from an
+        older-style pod kit is that the coil is swapped with every pod
+        change rather than wearing down across one fixed coil, which is
+        worth checking on the spec sheet alongside the wattage and
+        battery figures covered above.
+      </p>
 
       <h2>Reading the spec sheet before you buy</h2>
       <p>
